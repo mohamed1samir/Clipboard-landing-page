@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.button{
+    margin-top: 20px;
+    margin: 0px 0px 92px 0px;
+}
+.button button:nth-child(1){
+    border:0;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 31px;
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    box-shadow: 1px 7px 20px -4px  hsla(171, 66%, 44%, 0.694); 
+    border-bottom:2px solid hsl(171, 71%, 37%);
+    cursor: pointer;
+    margin-inline:4px;
+}
+.button button:nth-child(2){
+    border:0;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 31px;
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    box-shadow: 1px 7px 20px -4px hsla(233, 100%, 69%, 0.776); 
+    border-bottom:2px solid hsl(233, 61%, 57%);
+    cursor: pointer;
+    margin-inline:4px ;
+}
+.subtitle{
+    color:hsl(201, 11%, 66%);
+    padding: 0px 337px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+
+
+.pc-container{
+    display: flex;
+    gap: 100px;
+    margin: 20px 0px 90px 0px;
+}
+.pc-container img{
+    max-width: 90%;
+    transform: translateX(-46px);
+}
+
+.pc-container .mini-flex .subtitle{
+    padding: 0%;
+    text-align: left;
+    font-size: 12px;
+}
+.mini-flex{
+    text-align: left;
+    font-size: 10px;
+    width: 260px;
+    margin: 65px 0px 0px 0px;
+    line-height: 2;
+}
+
+@media (max-width:800px){
+    *{
+text-align: center;
+    }
+    .subtitle{
+        padding: 0;
+    }
+    .pc-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+}
